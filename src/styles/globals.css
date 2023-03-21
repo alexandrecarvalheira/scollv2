@@ -23,14 +23,6 @@ body {
   );
 }
 
-.bg {
-  background: linear-gradient(
-    141deg,
-    rgba(32, 26, 48, 1) 44%,
-    rgba(59, 51, 72, 1) 66%,
-    rgba(57, 40, 62, 1) 84%
-  );
-}
 @property --rotate {
   syntax: "<angle>";
   initial-value: 0deg;

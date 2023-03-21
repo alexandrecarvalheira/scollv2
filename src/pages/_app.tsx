@@ -28,11 +28,11 @@ export default function App({ Component, pageProps }: AppProps) {
           <NextHead>
             <title>Scroll Kingdom</title>
           </NextHead>
-          <main className={`${poppins.variable} bg `}>
+          <main className={`${poppins.variable}  `}>
             <Navbar />
             {mounted && <Component {...pageProps} />}
-            <Footer />
           </main>
+          <Footer />
         </AnimateProvider>
       </WagmiProvider>
     </>

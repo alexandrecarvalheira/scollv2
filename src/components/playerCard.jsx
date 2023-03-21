@@ -64,7 +64,7 @@ export default function PlayerCard() {
       </div>
       <div className=" my-auto">
         <div
-          className=" flex justify-center items-center text-3xl text-purple-900 tooltip "
+          className=" flex justify-center items-center text-3xl text-purple-900 tooltip tooltip-bottom"
           data-tip="strength"
         >
           <TbSword />0{selectedPlayer?.strength.toNumber()}
@@ -85,7 +85,7 @@ export default function PlayerCard() {
       </div>
       <div className=" my-auto ">
         <div
-          className=" flex justify-center items-center text-3xl text-purple-900 tooltip"
+          className=" flex justify-center items-center text-3xl text-purple-900 tooltip tooltip-bottom"
           data-tip="mana"
         >
           <GiPotionBall />0{selectedPlayer?.mana.toNumber()}
@@ -105,7 +105,7 @@ export default function PlayerCard() {
       </div>
       <div className=" my-auto ">
         <div
-          className=" flex justify-center items-center text-3xl text-purple-900 tooltip"
+          className=" flex justify-center items-center text-3xl text-purple-900 tooltip tooltip-bottom"
           data-tip="wisdom"
         >
           <GoLightBulb />0{selectedPlayer?.wisdom.toNumber()}
