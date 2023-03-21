@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        inn: "0 0 8px 8px white inset",
+      },
       backgroundImage: {
         "gradient-conic": "conic-gradient(var(--tw-gradient-stops))",
       },

@@ -19,6 +19,7 @@ export default function Card() {
     const loadContract = async () => {
       const contract = await store.diamond;
       const response = await contract.getPlayer(store.players[index]);
+      console.log(response);
       setSelectedPlayer(response);
     };
     loadContract();

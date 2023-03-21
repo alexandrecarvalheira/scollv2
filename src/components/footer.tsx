@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="bg-[#eeecde] fixed bottom-0 min-w-full mx-auto">
+    <div className="bg-[#0e051a] fixed bottom-0 min-w-full mx-auto">
       <footer className="flex flex-col items-center justify-center my-4">
         <div className="flex gap-4">
           <Link href={"https://twitter.com/ScrollKingdoms"} target={"_blank"}>
@@ -16,7 +16,7 @@ export default function Footer() {
             <FaDiscord size={30} color="#5865f2" />
           </Link>
         </div>
-        <p className="text-sm mt-4">
+        <p className="text-sm mt-4 text-white">
           Copyright © 📜 Scroll Kingdoms {new Date().getFullYear()}
         </p>
       </footer>

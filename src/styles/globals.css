@@ -11,8 +11,21 @@ html {
 }
 
 body {
-  @apply bg-[#f2f1ea];
   @apply min-h-screen;
+  background: linear-gradient(
+    141deg,
+    rgba(32, 26, 48, 1) 44%,
+    rgba(59, 51, 72, 1) 66%,
+    rgba(57, 40, 62, 1) 84%
+  );
+}
+
+.image-blurred-edge {
+  background: url("https://cdn.discordapp.com/attachments/1008571057562714113/1087756251691225119/axxcar_a_game_minimap_high_poly_model_with_colorful_nature_land_97ee2da1-7980-48e4-a560-abe7f7992788.png")
+    no-repeat center;
+  border-radius: 20px;
+  /* you need to match the shadow color to your background or image border for the desired effect*/
+  box-shadow: 0 0 8px 8px #352539 inset;
 }
 
 @property --rotate {
