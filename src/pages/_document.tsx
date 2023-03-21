@@ -1,4 +1,9 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
+
+export const metadata = {
+  title: "Scroll Kingdoms",
+  description: "Scroll Kingdoms crosschain game",
+};
 
 export default function Document() {
   return (
@@ -9,5 +14,5 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
