@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <NextHead>
             <title>Scroll Kingdom</title>
           </NextHead>
-          <main className={`${poppins.variable}`}>
+          <main className={`${poppins.variable} bg `}>
             <Navbar />
             {mounted && <Component {...pageProps} />}
             <Footer />

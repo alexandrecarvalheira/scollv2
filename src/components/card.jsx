@@ -25,6 +25,7 @@ export default function Card() {
     loadContract();
   }, [index]);
 
+  console.log(selectedPlayer);
   function renderSwitch(tab) {
     switch (tab) {
       case "Stats":
