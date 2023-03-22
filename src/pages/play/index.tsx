@@ -39,7 +39,7 @@ export default function Play() {
 
   if (players.length === 0) {
     return (
-      <div className="relative min-h-screen min-w-full flex flex-col items-center justify-center">
+      <div className="relative min-h-screen min-w-full flex flex-col items-center justify-center ">
         <Mint />
       </div>
     );
@@ -50,12 +50,11 @@ export default function Play() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="relative w-fit mb-auto min-h-fit flex flex-col sm:flex-row items-center justify-center mx-auto"
+        className="relative w-fit mb-auto min-h-fit flex flex-col sm:flex-row items-center justify-center mx-auto "
       >
         <Image
           src={minimap}
           alt="game map"
-          height={800}
           className="rounded-3xl shadow-inner"
         />
         <PlayerCard />

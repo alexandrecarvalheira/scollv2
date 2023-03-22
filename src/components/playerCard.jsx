@@ -31,7 +31,7 @@ export default function PlayerCard() {
   }, [index, address]);
   console.log(address);
   return (
-    <div className="stats shadow static  -left-28 -bottom-10 bg-[#E6E6FA] hover:bg-white py-2 pr-5 gap-6 scale-75 sm:absolute sm:bottom-1 sm:-left-12 lg:left-1 lg:scale-100">
+    <div className="stats shadow absolute -left-32 -bottom-8 bg-[#E6E6FA] hover:bg-white py-2 pr-5 gap-6 scale-[0.40] sm:absolute sm:scale-75 sm:bottom-1 sm:-left-12 lg:left-1 lg:scale-100">
       <div className="w-full flex items-center my-auto pl-1 gap-4">
         <div className="avatar p-4">
           <div className="w-16 rounded-full">

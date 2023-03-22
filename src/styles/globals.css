@@ -12,7 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
-
+  @apply w-full;
   @apply min-h-screen;
   @apply mb-auto;
   background: rgb(2, 22, 24);

@@ -54,7 +54,10 @@ export default function Mint() {
   };
   return (
     <>
-      <form className="flex mb-4 gap-2" onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className="flex flex-col mb-4 gap-2"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <input
           className="input bg-primary"
           placeholder="Player Name"
