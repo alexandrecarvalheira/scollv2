@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className=" relative items-center footer  w-full p-4 text-neutral-content ">
+    <footer className=" relative items-center footer flex justify-center w-full p-4 text-neutral-content ">
       <div className="items-center grid-flow-col">
         <p> Scroll Kingdoms Copyright © 2023 - All right reserved</p>
       </div>

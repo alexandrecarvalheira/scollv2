@@ -4,6 +4,8 @@ import preview from "../../public/images/nft-preview.gif";
 import { motion } from "framer-motion";
 import contractStore from "@/store/contractStore";
 import { useEffect, useState } from "react";
+import { useAccount } from "wagmi";
+
 import { AiOutlineHeart } from "react-icons/ai";
 import { TbSword, TbBrandTailwind, TbClover } from "react-icons/tb";
 import { SlEnergy } from "react-icons/sl";
@@ -13,6 +15,7 @@ import { SiGhost } from "react-icons/si";
 import { TfiEye } from "react-icons/tfi";
 
 export default function PlayerCard() {
+  const { address, isConnected, isReconnecting } = useAccount();
   const store = contractStore();
   const [selectedPlayer, setSelectedPlayer] = useState();
   const [index, setIndex] = useState(0);
@@ -21,13 +24,14 @@ export default function PlayerCard() {
     const loadContract = async () => {
       const contract = await store.diamond;
       const response = await contract.getPlayer(store.players[index]);
-      setSelectedPlayer(response);
+      console.log(response);
+      setSelectedPlayer(await response);
     };
     loadContract();
-  }, [index]);
-  console.log(selectedPlayer);
+  }, [index, address]);
+  console.log(address);
   return (
-    <div className="stats shadow absolute -bottom-4 bg-[#E6E6FA] hover:bg-white overflow-hidden py-2 pr-5 gap-6 scale-50 sm:scale-100 sm:bottom-3">
+    <div className="stats shadow static  -left-28 -bottom-10 bg-[#E6E6FA] hover:bg-white py-2 pr-5 gap-6 scale-75 sm:absolute sm:bottom-1 sm:-left-12 lg:left-1 lg:scale-100">
       <div className="w-full flex items-center my-auto pl-1 gap-4">
         <div className="avatar p-4">
           <div className="w-16 rounded-full">

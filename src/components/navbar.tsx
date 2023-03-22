@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <>
-      <div className="navbar font-bold z-30">
+      <div className="navbar font-bold z-30 bg-black text-slate-50">
         <div className="navbar-start">
           <div className="dropdown  hover:text-white  rounded-lg">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ export default function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52 bg-[#E6E6FA]  hover:text-purple-900"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52   "
             >
               <li>
                 <Link passHref href={"/play"}>
@@ -41,24 +41,24 @@ export default function Navbar() {
           </div>
           <Link
             href="/"
-            className="btn btn-ghost normal-case text-xl bg-[#E6E6FA] hover:bg-white hover:text-purple-900"
+            className="btn btn-ghost normal-case text-xl  hover:bg-gray-600 "
           >
             Scroll Kingdoms
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 gap-4  ">
-            <li className=" rounded-lg bg-[#E6E6FA] hover:bg-white hover:text-purple-900">
+            <li className=" rounded-lg  hover:bg-gray-600 ">
               <Link passHref href={"/play"}>
                 Play
               </Link>
             </li>
 
-            <li className=" rounded-lg bg-[#E6E6FA] hover:bg-white hover:text-purple-900">
+            <li className=" rounded-lg  hover:bg-gray-600 ">
               <Link href={"/leaderboard"}>Leaderboard</Link>
             </li>
 
-            <li className=" rounded-lg bg-[#E6E6FA] hover:bg-white hover:text-purple-900">
+            <li className=" rounded-lg  hover:bg-gray-600 ">
               <Link href={"/about"}>About</Link>
             </li>
           </ul>

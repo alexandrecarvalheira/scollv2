@@ -15,11 +15,12 @@ body {
 
   @apply min-h-screen;
   @apply mb-auto;
-  background: linear-gradient(
-    141deg,
-    rgba(32, 26, 48, 1) 44%,
-    rgba(59, 51, 72, 1) 66%,
-    rgba(57, 40, 62, 1) 84%
+  background: rgb(2, 22, 24);
+  background: radial-gradient(
+    circle,
+    rgba(2, 22, 24, 1) 31%,
+    rgba(1, 13, 13, 1) 63%,
+    rgba(1, 7, 10, 1) 83%
   );
 }
 
